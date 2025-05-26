@@ -1,0 +1,109 @@
+/* Style général */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Bannière */
+.banniere {
+  background: linear-gradient(#000046, #1cb5e0);
+  height: 80px;
+  display: flex;
+  align-items: flex-start; /* Aligne le texte en haut */
+  justify-content: center;
+
+}
+
+.texte-banniere h1, .texte-banniere p {
+  color: white;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* Galerie */
+.galerie {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 10px; /* Espacement horizontal et vertical de 10px */
+  row-gap: 20px; /* Espacement vertical de 30px entre les lignes */
+}
+
+
+.carte {
+  position: relative;
+  width: 24%;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carte img {
+  width: 100%;
+  height: 500px; /* Ajustez cette valeur selon vos besoins */
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+
+.carte:hover img {
+  transform: scale(1.05);
+}
+
+.texte-carte {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+.decalage-gauche {
+  margin-left: 20px; /* Ajustez la valeur selon vos besoins */
+}
+
+/* Menu de navigation */
+.menu {
+  background-color: #000046;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #1cb5e0;
+}
